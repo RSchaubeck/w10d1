@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+  background: #A9DBB8;
+  text-align: center;
+}
+
+h1 {
+  color: #F0F2EF;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.dog-view {
+  display: none;
+}
+
+.drop-down-dog-nav {
+  background-color: #847996;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.dog-link {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#clock {
+  padding: 10px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome {
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
